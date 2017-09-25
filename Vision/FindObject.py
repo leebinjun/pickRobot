@@ -109,7 +109,7 @@ class FindObject:
         pass
 
 class FindBall(FindObject):
-    def getCenter(self,binaryImg=None,contoursRange=(60,1000),dilateFlag=True, ksize=(3,3)):
+    def getCenter(self,binaryImg=None,contoursRange=(60,10000),dilateFlag=True, ksize=(3,3)):
         '''Get the center the of the ball
         input : binaryImg,contoursRange=(200,1000)
         return: coutours,img
